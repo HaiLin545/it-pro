@@ -5,8 +5,8 @@
       <el-form-item label="投放人数" size="small">
         <el-input-number v-model="form.local" :min="1" />
       </el-form-item>
-      <el-form-item label="投放人数中的境外人数" size="small">
-        <el-input-number v-model="form.foreign" :min="0" />
+      <el-form-item label="预测天数" size="small">
+        <el-input-number v-model="form.foreign" :min="0" :max="14"/>
       </el-form-item>
       <el-form-item label="投放城市" size="small">
         <el-select v-model="form.city" placeholder="请选择要投放病人的城市">
